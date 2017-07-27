@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="wislove-config" />
         <module name="wislove-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="wislove" target="1.5" />
+      <module name="wislove-config" target="1.5" />
       <module name="wislove-web" target="1.5" />
     </bytecodeTargetLevel>
   </component>

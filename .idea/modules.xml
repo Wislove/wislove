@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/wislove.iml" filepath="$PROJECT_DIR$/wislove.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wislove-config/wislove-config.iml" filepath="$PROJECT_DIR$/wislove-config/wislove-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/wislove-web/wislove-web.iml" filepath="$PROJECT_DIR$/wislove-web/wislove-web.iml" />
     </modules>
   </component>
