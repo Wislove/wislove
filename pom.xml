@@ -13,5 +13,30 @@
         <module>wislove-api</module>
     </modules>
     <packaging>pom</packaging>
+    <description>整体框架使用SSM,部分具体业务将尝试spring-boot,一个将会持续更新很久的项目，这次是认真的（不要笑!）</description>
 
+    <!--一些全局定义的版本-->
+    <properties>
+        <spring.version>4.1.0.RELEASE</spring.version>
+        <spring-boot.version>1.5.4.RELEASE</spring-boot.version>
+        <mybatis.version></mybatis.version>
+
+        <jdk.version>1.8</jdk.version>
+    </properties>
+
+    <!--TODO 搭建Nexus私有仓库管理jar包-->
+
+    <!--相关的jar包-->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-expression</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+    </dependencies>
 </project>
