@@ -11,6 +11,7 @@
         <module>wislove-web</module>
         <module>wislove-config</module>
         <module>wislove-api</module>
+        <module>wislove-pay</module>
     </modules>
     <packaging>pom</packaging>
     <description>整体框架使用SSM,部分具体业务将尝试spring-boot,一个将会持续更新很久的项目，这次是认真的（不要笑!）</description>
