@@ -10,18 +10,21 @@
           <element id="archive" name="wislove-config-1.0-SNAPSHOT.jar">
             <element id="module-output" name="wislove-config" />
           </element>
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.39" />
           <element id="library" level="project" name="Maven: org.springframework:spring-test:4.3.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.3.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.9.RELEASE" />
           <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.9.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-jms:4.3.9.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.9.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.9.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-messaging:4.3.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.3.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.3.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jms:4.3.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-messaging:4.3.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.9.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">
