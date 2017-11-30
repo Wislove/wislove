@@ -6,11 +6,6 @@
         <element id="directory" name="classes">
           <element id="module-output" name="wislove-web" />
         </element>
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.1.0.RELEASE" />
-          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.3" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.1.0.RELEASE" />
-        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/wislove-web/target/wislove-web/META-INF/MANIFEST.MF" />

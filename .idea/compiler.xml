@@ -15,7 +15,7 @@
     <bytecodeTargetLevel>
       <module name="wislove" target="1.5" />
       <module name="wislove-api" target="1.5" />
-      <module name="wislove-config" target="1.5" />
+      <module name="wislove-config" target="1.8" />
       <module name="wislove-pay" target="1.5" />
       <module name="wislove-web" target="1.5" />
     </bytecodeTargetLevel>
