@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="wislove-api" />
         <module name="wislove-config" />
+        <module name="wislove-gateway" />
         <module name="wislove-pay" />
         <module name="wislove-web" />
         <module name="wislove-wechat" />
@@ -17,6 +18,7 @@
       <module name="wislove" target="1.5" />
       <module name="wislove-api" target="1.5" />
       <module name="wislove-config" target="1.8" />
+      <module name="wislove-gateway" target="1.5" />
       <module name="wislove-pay" target="1.5" />
       <module name="wislove-web" target="1.5" />
       <module name="wislove-wechat" target="1.5" />

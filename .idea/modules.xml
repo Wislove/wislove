@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/wislove.iml" filepath="$PROJECT_DIR$/wislove.iml" />
       <module fileurl="file://$PROJECT_DIR$/wislove-api/wislove-api.iml" filepath="$PROJECT_DIR$/wislove-api/wislove-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/wislove-config/wislove-config.iml" filepath="$PROJECT_DIR$/wislove-config/wislove-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wislove-gateway/wislove-gateway.iml" filepath="$PROJECT_DIR$/wislove-gateway/wislove-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/wislove-pay/wislove-pay.iml" filepath="$PROJECT_DIR$/wislove-pay/wislove-pay.iml" />
       <module fileurl="file://$PROJECT_DIR$/wislove-web/wislove-web.iml" filepath="$PROJECT_DIR$/wislove-web/wislove-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/wislove-wechat/wislove-wechat.iml" filepath="$PROJECT_DIR$/wislove-wechat/wislove-wechat.iml" />
