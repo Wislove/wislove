@@ -4,6 +4,12 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!--spring 的通用配置,其他项目除datasource不同之外,其他的配置都采用相同的配置-->
     <context:component-scan base-package="com.wislove"/>
+
+    <!--使用注解配置-->
+    <context:annotation-config/>
+
+    <!--sessionFactory的配置-->
 
 </beans>

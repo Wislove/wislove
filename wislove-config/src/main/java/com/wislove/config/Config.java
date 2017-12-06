@@ -10,7 +10,7 @@ import java.io.IOException;
 public class Config {
 
     public static  void main(String[] args) throws IOException {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("/applicationContext.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("/spring/spring-base.xml");
         context.start();
         System.in.read();
     }
