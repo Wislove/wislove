@@ -2,14 +2,35 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <context:property-placeholder location="classpath*:properties/jdbc.properties"/>
     <!--spring 的通用配置,其他项目除datasource不同之外,其他的配置都采用相同的配置-->
     <context:component-scan base-package="com.wislove"/>
-
     <!--使用注解配置-->
     <context:annotation-config/>
+    <!--基于注解的aop配置-->
+   <!-- <aop:aspectj-autoproxy/>-->
 
-    <!--sessionFactory的配置-->
+    <bean id="abstractDataSource" class="com.alibaba.druid.pool.DruidDataSource" >
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="username" value="${database.username}"/>
+        <property name="password" value="${database.password}"/>
+
+
+        <property name="initialSize" value="${druid.initialSize}"/>
+        <property name="minIdle" value="${druid.minIdle}"/>
+        <property name="maxActive" value="${druid.maxActive}"/>
+        <property name="maxWait" value="${druid.maxWait}"/>
+    </bean>
+
+
+    
+    <!--TODO 全局的缓存配置,以及缓存配置-->
+
+    <!--TODO 全局的消息队列配置-->
 
 </beans>

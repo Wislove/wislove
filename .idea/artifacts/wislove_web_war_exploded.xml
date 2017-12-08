@@ -25,6 +25,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-messaging:4.3.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.9.RELEASE" />
+          <element id="library" level="project" name="Maven: com.alibaba:druid:1.0.5" />
         </element>
       </element>
       <element id="directory" name="META-INF">
