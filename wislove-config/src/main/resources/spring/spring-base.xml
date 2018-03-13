@@ -27,8 +27,11 @@
         <property name="maxWait" value="${druid.maxWait}"/>
     </bean>
 
+    <!--spring 的申明式事务管理-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="abstractDataSource"/>
+    </bean>
 
-    
     <!--TODO 全局的缓存配置,以及缓存配置-->
 
     <!--TODO 全局的消息队列配置-->

@@ -5,6 +5,7 @@
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/spring/spring-base.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/orm/spring-mybatis.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -37,6 +38,9 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-messaging:4.3.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.3.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.3.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-orm:4.3.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:druid:1.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis-spring:1.3.1" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.4.2" level="project" />
   </component>
 </module>

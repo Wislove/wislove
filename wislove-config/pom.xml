@@ -11,27 +11,6 @@
 
     <artifactId>wislove-config</artifactId>
 
-    <!--一些全局定义的版本-->
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-        <spring.version>4.3.9.RELEASE</spring.version>
-        <spring-boot.version>1.5.4.RELEASE</spring-boot.version>
-
-        <mybatis.version>3.4.2</mybatis.version>
-        <mybatis-spring.version>1.3.1</mybatis-spring.version>
-        <mybatis-pagehelper.version>5.0.1</mybatis-pagehelper.version>
-        <mybatis-generator.version>1.3.5</mybatis-generator.version>
-        <mybatis-ehcache.version>1.0.0</mybatis-ehcache.version>
-        <ehcache.version>2.10.0</ehcache.version>
-        <shiro.version>1.3.2</shiro.version>
-
-        <jdk.version>1.8</jdk.version>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
-    </properties>
-
     <!--TODO 搭建Nexus私有仓库管理jar包-->
 
     <!--相关的jar包-->
@@ -109,6 +88,12 @@
             <version>${spring.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
         <!--druid 数据库链接池-->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -116,6 +101,16 @@
             <version>1.0.5</version>
         </dependency>
 
-
+        <!--mybatis-->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+        </dependency>
     </dependencies>
 </project>

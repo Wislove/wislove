@@ -14,8 +14,32 @@
         <module>wislove-pay</module>
         <module>wislove-wechat</module>
         <module>wislove-gateway</module>
+        <module>wislove-spring-boot</module>
     </modules>
     <packaging>pom</packaging>
     <description>整体框架使用SSM,部分具体业务将尝试spring-boot,一个将会持续更新很久的项目，这次是认真的（不要笑!）</description>
+
+    <!--定义整体的一个使用版本，使版本统一管理-->
+    <!--一些全局定义的版本-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <spring.version>4.3.9.RELEASE</spring.version>
+        <spring-boot.version>2.0.0.RELEASE</spring-boot.version>
+
+        <mybatis.version>3.4.2</mybatis.version>
+        <mybatis-spring.version>1.3.1</mybatis-spring.version>
+        <mybatis-pagehelper.version>5.0.1</mybatis-pagehelper.version>
+        <mybatis-generator.version>1.3.5</mybatis-generator.version>
+        <mybatis-ehcache.version>1.0.0</mybatis-ehcache.version>
+        <ehcache.version>2.10.0</ehcache.version>
+        <shiro.version>1.3.2</shiro.version>
+
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+    </properties>
+
 
 </project>
