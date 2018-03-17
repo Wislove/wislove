@@ -12,7 +12,7 @@
     <description>spring boot demo use for user center</description>
 
     <artifactId>wislove-uc</artifactId>
-
+    <packaging>jar</packaging>
 
     <!--将spring-boot的pom文件作为pom导入-->
     <dependencyManagement>
@@ -64,6 +64,7 @@
 
     </dependencies>
 
+    <!--打包的相关配置-->
     <build>
         <finalName>wislove-uc</finalName>
 
@@ -72,7 +73,49 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+
+                <!--打包jar时,配置MANIFEST.MF,指定运行的主程序类,指定第三方依赖包的目录-->
+                <configuration>
+                    <classesDirectory>target/classes/</classesDirectory>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.wislove.uc.main.SpringBootUcMain</mainClass>
+                            <!-- 打包时 MANIFEST.MF文件不记录的时间戳版本 -->
+                            <useUniqueVersions>false</useUniqueVersions>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>//指定jar所依赖的外部jar包所在的目录
+
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <!--这里的配置是install打包的时候，将依赖包复制到lib目录下面-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <type>jar</type>
+                            <includeTypes>jar</includeTypes>
+                            <outputDirectory>
+                                ${project.build.directory}/lib
+                            </outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
     </build>
-
 </project>
