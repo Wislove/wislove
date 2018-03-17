@@ -14,7 +14,7 @@
         <module>wislove-pay</module>
         <module>wislove-wechat</module>
         <module>wislove-gateway</module>
-        <module>wislove-spring-boot</module>
+        <module>wislove-uc</module>
         <module>wislove-utils</module>
     </modules>
     <packaging>pom</packaging>

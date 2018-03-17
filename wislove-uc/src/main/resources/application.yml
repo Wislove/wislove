@@ -1,12 +1,13 @@
 server:
   port: 8099
+  servlet:
+    context-path: /wislove-uc
 
 spring:
   datasource:
+    # type: com.alibaba.druid.pool.DruidDataSource
+
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/wislove_uc
     username: root
     password: 123456
-
-
-

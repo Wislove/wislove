@@ -9,6 +9,8 @@ wislove-config:配置中心
 
 wislove-web:所有web中心接口
 
+wislove-uc:用户中心,包括用户信息,授权登录等等
+
 wislove-pay:支付中心
 
 wislove-wechat:微信第三方，小程序，公众号等
