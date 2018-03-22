@@ -10,7 +10,7 @@
         <module name="wislove-config" />
         <module name="wislove-gateway" />
         <module name="wislove-pay" />
-        <module name="wislove-spring-boot" />
+        <module name="wislove-uc" />
         <module name="wislove-utils" />
         <module name="wislove-web" />
         <module name="wislove-wechat" />
@@ -23,6 +23,7 @@
       <module name="wislove-gateway" target="1.8" />
       <module name="wislove-pay" target="1.8" />
       <module name="wislove-spring-boot" target="1.8" />
+      <module name="wislove-uc" target="1.8" />
       <module name="wislove-utils" target="1.8" />
       <module name="wislove-web" target="1.8" />
       <module name="wislove-wechat" target="1.8" />
