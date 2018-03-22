@@ -16,7 +16,7 @@
         <!-- 通用mapper插件 -->
         <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
             <!-- 此处的 MyMapper注意一定不能被扫描到-->
-            <property name="mappers" value="com.demo.utils.MyMapper"/>
+            <property name="mappers" value="com.wislove.uc.utils.MyMapper"/>
         </plugin>
         <!-- 注释 规则-->
         <commentGenerator>
@@ -26,24 +26,22 @@
 
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/test"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/wislove_uc"
                         userId="root"
-                        password="123456">
-        </jdbcConnection>
+                        password="root"/>
 
-        <javaModelGenerator targetPackage="com.demo.domain" targetProject="src/main/java"/>
+
+        <javaModelGenerator targetPackage="com.wislove.uc.entity" targetProject="src/main/java"/>
         <sqlMapGenerator targetPackage="sqlmapper" targetProject="src/main/resources"/>
-        <javaClientGenerator targetPackage="com.demo.mapper" targetProject="src/main/java"
-                             type="XMLMAPPER"/>
-        <table tableName="%">
+        <javaClientGenerator targetPackage="com.wislove.uc.mapper" targetProject="src/main/java" type="XMLMAPPER"/>
+        <table tableName="user_base_info" domainObjectName="FeeBase"
+                  enableCountByExample="false" enableUpdateByExample="false"
+                     enableDeleteByExample="false" enableSelectByExample="false"
+                     selectByExampleQueryId="false" >
             <!--mysql 配置-->
-            <generatedKey column="id" sqlStatement="Mysql" />
+            <!--<generatedKey column="id" sqlStatement="Mysql" />-->
             <!--oracle 配置-->
             <!--<generatedKey column="id" sqlStatement="select SEQ_{1}.nextval from dual" identity="false" type="pre"/>-->
         </table>
     </context>
 </generatorConfiguration>
-
-        <!--作者：请叫我铁臂阿童木
-            链接：https://www.jianshu.com/p/0b1ae0255a16
-           來源：简书 -->
