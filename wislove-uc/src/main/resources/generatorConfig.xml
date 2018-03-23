@@ -14,10 +14,10 @@
         <property name="endingDelimiter" value="`"/>
 
         <!-- 通用mapper插件 -->
-        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
-            <!-- 此处的 MyMapper注意一定不能被扫描到-->
+        <!--<plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            &lt;!&ndash; 此处的 MyMapper注意一定不能被扫描到&ndash;&gt;
             <property name="mappers" value="com.wislove.uc.utils.MyMapper"/>
-        </plugin>
+        </plugin>-->
         <!-- 注释 规则-->
         <commentGenerator>
             <property name="suppressAllComments" value="false"/>
@@ -34,10 +34,13 @@
         <javaModelGenerator targetPackage="com.wislove.uc.entity" targetProject="src/main/java"/>
         <sqlMapGenerator targetPackage="sqlmapper" targetProject="src/main/resources"/>
         <javaClientGenerator targetPackage="com.wislove.uc.mapper" targetProject="src/main/java" type="XMLMAPPER"/>
-        <table tableName="user_base_info" domainObjectName="FeeBase"
+
+        <table tableName="%">
+            <generatedKey column="id" sqlStatement=""/>
+       <!-- <table tableName="user_base_info" domainObjectName=""
                   enableCountByExample="false" enableUpdateByExample="false"
                      enableDeleteByExample="false" enableSelectByExample="false"
-                     selectByExampleQueryId="false" >
+                     selectByExampleQueryId="false" >-->
             <!--mysql 配置-->
             <!--<generatedKey column="id" sqlStatement="Mysql" />-->
             <!--oracle 配置-->
