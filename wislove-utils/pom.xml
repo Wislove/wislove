@@ -8,8 +8,11 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>wislove-utils</artifactId>
     <description>整个项目的utils工具项目</description>
+
+    <build>
+        <finalName>wislove-utils</finalName>
+    </build>
 
 </project>
