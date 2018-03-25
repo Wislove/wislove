@@ -16,4 +16,6 @@ mybatis:
   type-aliases-package: com.wislove.uc.entity
   mapper-locations: classpath:sqlmapper/*.xml
 
-
+#logger
+logging:
+  level: info
