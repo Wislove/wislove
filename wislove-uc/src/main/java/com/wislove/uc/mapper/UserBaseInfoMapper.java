@@ -1,6 +1,8 @@
 package com.wislove.uc.mapper;
 
 import com.wislove.uc.entity.UserBaseInfo;
+import com.wislove.uc.utils.MyMapper;
+
 import java.util.List;
 
 public interface UserBaseInfoMapper {
