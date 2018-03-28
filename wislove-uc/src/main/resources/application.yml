@@ -17,8 +17,8 @@ mybatis:
   mapper-locations: classpath:sqlmapper/*.xml
 
 #logger
-#logging:
-#  path: G:/wislove-logs/
+logging:
+   path: G:/wislove_logs/wislove_uc
 #  pattern:
 #    console: "%d - %msg%n"
 #  level: info

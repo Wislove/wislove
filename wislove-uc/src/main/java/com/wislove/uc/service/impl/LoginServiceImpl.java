@@ -3,6 +3,7 @@ package com.wislove.uc.service.impl;
 import com.wislove.uc.entity.UserBaseInfo;
 import com.wislove.uc.mapper.UserBaseInfoMapper;
 import com.wislove.uc.service.LoginService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

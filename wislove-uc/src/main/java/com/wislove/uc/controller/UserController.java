@@ -22,8 +22,9 @@ import javax.servlet.http.HttpServletResponse;
 @RestController
 @EnableAutoConfiguration
 @RequestMapping("/uc")
+@Slf4j
 public class UserController {
-    private Logger logger = LoggerFactory.getLogger(UserController.class);
+
 
     @Resource
     private LoginService loginService;
@@ -32,7 +33,7 @@ public class UserController {
 
    @RequestMapping(value = "/login")
    public UserBaseInfo login(String account, String password, HttpServletRequest request, HttpServletResponse response){
-       logger.info("调用登陆接口");
+       log.info("调用登陆接口");
        UserBaseInfo userBaseInfo = loginService.login(account, password);
        return userBaseInfo;
    }
