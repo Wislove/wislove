@@ -23,6 +23,8 @@
 
     <!-- 按照每天生成日志文件 -->
     <appender name="FILE"  class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <Encoding>UTF-8</Encoding>
+        <File>${LOG_HOME}/wislove_uc.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--日志文件输出的文件名-->
             <FileNamePattern>${LOG_HOME}/wislove_uc.log.%d{yyyy-MM-dd}.log</FileNamePattern>
@@ -44,7 +46,7 @@
         </encoder>
         <!--日志文件最大的大小-->
         <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-            <MaxFileSize>10MB</MaxFileSize>
+            <MaxFileSize>100MB</MaxFileSize>
         </triggeringPolicy>
     </appender>
 
@@ -55,7 +57,9 @@
     <logger name="java.sql.PreparedStatement" level="DEBUG"/>
 
     <!-- 基于dubug处理日志：具体控制台或者文件对日志级别的处理还要看所在appender配置的filter，如果没有配置filter，则使用root配置 -->
-    <root level="INFO">
+    <root>
+        <level>INFO</level>
+        <level>error</level>
         <appender-ref ref="STDOUT" />
         <appender-ref ref="FILE" />
     </root>
