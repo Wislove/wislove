@@ -20,3 +20,25 @@ wislove-gateway:授权管理中心,拦截器等
 计划使用Java8，学习使用一些新特性，函数式编程和lamdad表达式，一些stream的运用(我不太会)
 
 ps:感觉计划的有点大，有点多，公司项目比较紧，自己又有点懒，更新会比较慢
+
+
+技术栈
+
+```
+|:--:|:-:|
+
+Java: 1.8
+
+spring: 
+spring-boot: 2.0.0
+
+ORM:
+JPA:
+mybatis
+
+
+dubbo
+
+SnowflakeIdWorker (twiter自定义的主键生成器)
+
+```
