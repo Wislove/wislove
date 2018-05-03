@@ -23,7 +23,7 @@
 
     <!-- 按照每天生成日志文件 -->
     <appender name="FILE"  class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <Encoding>UTF-8</Encoding>
+        <!-- <Encoding>UTF-8</Encoding> -->
         <File>${LOG_HOME}/wislove_uc.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--日志文件输出的文件名-->
