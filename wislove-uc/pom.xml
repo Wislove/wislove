@@ -75,11 +75,6 @@
             <version>1.0.5</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-        </dependency>
-
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -110,12 +105,12 @@
                     <overwrite>true</overwrite>
                 </configuration>
                 <executions>
-                    <execution>
+                    <!-- <execution>
                         <id>Generate MyBatis Artifacts</id>
                         <goals>
                             <goal>generate</goal>
                         </goals>
-                    </execution>
+                    </execution> -->
                 </executions>
                 <dependencies>
                     <dependency>
