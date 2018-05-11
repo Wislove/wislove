@@ -12,6 +12,7 @@ import javax.annotation.Resource;
  * Created by 廖双龙 on 2018/3/25.
  */
 @Service
+@Slf4j
 public class LoginServiceImpl implements LoginService{
 
     @Resource
@@ -20,7 +21,7 @@ public class LoginServiceImpl implements LoginService{
     @Override
     public UserBaseInfo login(String account, String password) {
         UserBaseInfo userBaseInfo = userBaseInfoMapper.selectByPrimaryKey(Long.valueOf(1));
-
+        log.info("登录查询数据库返回相关数据");
         return userBaseInfo;
     }
 }
