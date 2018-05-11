@@ -41,7 +41,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
+        
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+        </dependency>
+    
         <!--整合mybatis-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
