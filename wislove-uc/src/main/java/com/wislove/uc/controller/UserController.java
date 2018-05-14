@@ -1,19 +1,18 @@
 package com.wislove.uc.controller;
 
-import com.wislove.uc.entity.UserBaseInfo;
-import com.wislove.uc.service.LoginService;
-import com.wislove.uc.service.RegisterService;
-import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.wislove.uc.entity.UserBaseInfo;
+import com.wislove.uc.service.LoginService;
+import com.wislove.uc.service.RegisterService;
+
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * Created by 廖双龙 on 2018/3/17.
