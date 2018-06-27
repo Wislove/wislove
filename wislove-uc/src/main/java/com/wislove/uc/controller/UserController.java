@@ -17,7 +17,6 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * Created by 廖双龙 on 2018/3/17.
  */
-
 @RestController
 @EnableAutoConfiguration
 @RequestMapping("/uc")
@@ -29,10 +28,11 @@ public class UserController {
     private LoginService loginService;
     @Resource
     private RegisterService registerService;
-
+    
+    
    @RequestMapping(value = "/login")
    public UserBaseInfo login(String account, String password, HttpServletRequest request, HttpServletResponse response){
-       log.info("调用登陆接口");
+       log.info("调用登陆接口");   
        UserBaseInfo userBaseInfo = loginService.login(account, password);
        return userBaseInfo;
    }
