@@ -5,15 +5,10 @@ import java.util.Set;
 import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
 import javax.validation.Validator;
-import javax.validation.constraints.NotBlank;
 
 import org.hibernate.validator.HibernateValidator;
-import org.hibernate.validator.constraints.Range;
 
-import com.wislove.api.ApiCode;
 import com.wislove.exception.ParamsException;
-
-import lombok.Data;
 
 /**
  * 验证工具类
@@ -41,9 +36,5 @@ public class ValidatorUtils {
 		if (constraintViolations.size() > 0) {
 			throw new ParamsException(constraintViolations.iterator().next().getMessage());
 		}
-	}
-	
-	public static void main(String[] args) {
-		System.out.println(ApiCode.PARAM_EXCEPTION.getCode());
 	}
 }

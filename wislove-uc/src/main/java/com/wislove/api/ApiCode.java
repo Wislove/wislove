@@ -21,22 +21,22 @@ public enum ApiCode {
 	// 数据异常(数据已存在,未找到等)
 
 	// 调用异常(rpc异常,第三方异常,网络异常等)
-
+	
 	/** 状态码 **/
-	private int code;
+	private Integer code;
 	/** 消息 **/
 	private String message;
-
-	ApiCode(int code, String messagge) {
-		code = this.code;
-		messagge = this.message;
+	
+	private ApiCode(Integer code, String messagge) {
+		this.code = code;
+		this.message = messagge;
 	}
 
-	public int getCode() {
+	public Integer getCode() {
 		return code;
 	}
 
-	public void setCode(int code) {
+	public void setCode(Integer code) {
 		this.code = code;
 	}
 
@@ -47,4 +47,5 @@ public enum ApiCode {
 	public void setMessage(String message) {
 		this.message = message;
 	}
+	
 }
