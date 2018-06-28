@@ -2,14 +2,7 @@ package com.wislove.uc.entity;
 
 import java.util.Date;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.validation.constraints.NotBlank;
 
-import com.wislove.annotation.validation.MyContraint;
-
-@Entity
-@Table(name = "user_base_info")
 public class UserBaseInfo {
     
 	/**
@@ -26,8 +19,6 @@ public class UserBaseInfo {
      *
      * @mbggenerated
      */
-    @NotBlank(message = "昵称不能为空")
-    @MyContraint(message = "自己的限制")
     private String nickname;
 
     /**

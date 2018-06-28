@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.wislove.api.ApiResult;
 import com.wislove.uc.entity.UserBaseInfo;
 import com.wislove.uc.service.LoginService;
 import com.wislove.uc.service.RegisterService;
@@ -31,15 +32,15 @@ public class UserController {
     
     
    @RequestMapping(value = "/login")
-   public UserBaseInfo login(String account, String password, HttpServletRequest request, HttpServletResponse response){
-       log.info("调用登陆接口");   
+   public ApiResult login(String account, String password, HttpServletRequest request, HttpServletResponse response){
+       log.info("调用登陆接口");
        UserBaseInfo userBaseInfo = loginService.login(account, password);
-       return userBaseInfo;
+       return ApiResult.success(userBaseInfo);
    }
 
     @RequestMapping(value = "/register")
-    public UserBaseInfo register(UserBaseInfo userBaseInfo, HttpServletRequest request, HttpServletResponse response){
+    public ApiResult register(UserBaseInfo userBaseInfo, HttpServletRequest request, HttpServletResponse response){
         UserBaseInfo userBaseInfo1 = registerService.register(userBaseInfo);
-        return userBaseInfo;
+        return ApiResult.success(userBaseInfo1);
     }
 }

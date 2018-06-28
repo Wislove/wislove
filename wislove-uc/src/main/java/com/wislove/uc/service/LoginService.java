@@ -1,6 +1,5 @@
 package com.wislove.uc.service;
 
-import com.wislove.uc.entity.UserAccountBindInfo;
 import com.wislove.uc.entity.UserBaseInfo;
 
 /**

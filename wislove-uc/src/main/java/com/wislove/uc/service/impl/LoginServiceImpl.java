@@ -20,7 +20,11 @@ public class LoginServiceImpl implements LoginService{
 
     @Override
     public UserBaseInfo login(String account, String password) {
-        UserBaseInfo userBaseInfo = userBaseInfoMapper.selectByPrimaryKey(Long.valueOf(1));
+        if (password.equals(null)){
+        	
+        }
+        
+    	UserBaseInfo userBaseInfo = userBaseInfoMapper.selectByPrimaryKey(Long.valueOf(1));
         log.info("登录查询数据库返回相关数据");
         return userBaseInfo;
     }
