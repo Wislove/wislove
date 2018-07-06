@@ -13,19 +13,18 @@ import javax.annotation.Resource;
  */
 @Service
 @Slf4j
-public class LoginServiceImpl implements LoginService{
+public class LoginServiceImpl implements LoginService {
 
-    @Resource
-    private UserBaseInfoMapper userBaseInfoMapper;
+	@Resource
+	private UserBaseInfoMapper userBaseInfoMapper;
 
-    @Override
-    public UserBaseInfo login(String account, String password) {
-        if (password.equals(null)){
-        	
-        }
-        
-    	UserBaseInfo userBaseInfo = userBaseInfoMapper.selectByPrimaryKey(Long.valueOf(1));
-        log.info("登录查询数据库返回相关数据");
-        return userBaseInfo;
-    }
+	@Override
+	public UserBaseInfo login(String account, String password) {
+		
+		
+		
+		UserBaseInfo userBaseInfo = userBaseInfoMapper.selectByPrimaryKey(Long.valueOf(1));
+		log.info("登录查询数据库返回相关数据");
+		return userBaseInfo;
+	}
 }

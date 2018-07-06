@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import com.wislove.api.ApiCode;
 import com.wislove.api.ApiResult;
-import com.wislove.exception.ParamsException;
+import com.wislove.exception.MyException;
 
 /**
  * 统一的异常处理类
@@ -24,8 +24,8 @@ public class MyControllerAdvice {
 	 * @date 2018年6月28日 下午5:18:10
 	 * @version v1.0.0
 	 */
-	@ExceptionHandler({ ParamsException.class })
-	public ApiResult handleParamsException(ParamsException exception) {
+	@ExceptionHandler({ MyException.class })
+	public ApiResult handleParamsException(MyException exception) {
 		return ApiResult.fail(ApiCode.PARAM_EXCEPTION.getCode(), exception.getMessage());
 	}
 	

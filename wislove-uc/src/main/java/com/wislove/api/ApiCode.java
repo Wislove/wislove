@@ -10,17 +10,20 @@ public enum ApiCode {
 
 	/** 成功 **/
 	SUCCESS(200, "成功"),
+	// 未登录
+	NOT_LOGIN(401, "未登录,需要登录"),
 	// 权限异常
-	ACCESS_EXCEPTION(101, "权限不足"),
+	ACCESS_EXCEPTION(403, "权限不足,禁止访问"),
 	// 参数检验异常,参数错误
 	PARAM_EXCEPTION(414, "参数异常");
 	// 代码逻辑异常,全局异常处理
-
+	
 	// 业务逻辑判断异常
-
+	
 	// 数据异常(数据已存在,未找到等)
-
+	
 	// 调用异常(rpc异常,第三方异常,网络异常等)
+	
 	
 	/** 状态码 **/
 	private Integer code;

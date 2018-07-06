@@ -8,7 +8,7 @@ import javax.validation.Validator;
 
 import org.hibernate.validator.HibernateValidator;
 
-import com.wislove.exception.ParamsException;
+import com.wislove.exception.MyException;
 
 /**
  * 验证工具类
@@ -24,17 +24,17 @@ public class ValidatorUtils {
 	/**
 	 * 验证参数
 	 * @param obj
-	 * @throws ParamsException 
+	 * @throws MyException 
 	 * @return void
 	 * @author 廖双龙
 	 * @date 2018年6月28日 下午2:35:44
 	 * @version v1.0.0
 	 */
-	public static <T> void validate(T obj) throws ParamsException {
+	public static <T> void validate(T obj) throws MyException {
 		Set<ConstraintViolation<T>> constraintViolations = validator.validate(obj);
 		// 抛出检验异常
 		if (constraintViolations.size() > 0) {
-			throw new ParamsException(constraintViolations.iterator().next().getMessage());
+			throw new MyException(constraintViolations.iterator().next().getMessage());
 		}
 	}
 }
