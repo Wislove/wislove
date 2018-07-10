@@ -1,4 +1,4 @@
-package com.wislove.annotation.validation;
+package com.wislove.validation.annotation;
 
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;
@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
-import com.wislove.annotation.validation.validator.MyConstrainValidator;
+import com.wislove.validation.annotation.validator.MyConstrainValidator;
 
 /**
  * 限制相关的注解服务

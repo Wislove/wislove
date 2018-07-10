@@ -1,9 +1,9 @@
-package com.wislove.annotation.validation.validator;
+package com.wislove.validation.annotation.validator;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-import com.wislove.annotation.validation.MyContraint;
+import com.wislove.validation.annotation.MyContraint;
 
 /**
  * 自定义的验证类
