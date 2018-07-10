@@ -11,7 +11,7 @@ import tk.mybatis.spring.annotation.MapperScan;
  * Created by 廖双龙 on 2018/3/16.
  */
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.wislove.uc.*"})
+@ComponentScan(basePackages = {"com.wislove.*"})
 @MapperScan(basePackages = "com.wislove.uc.mapper")
 public class SpringBootUcMain {
 
