@@ -10,5 +10,4 @@ public class AppConstants {
 	/**请求头相关常量**/
 	public static final String ACCESS_TOKEN = "access_token";
 	
-	
 }

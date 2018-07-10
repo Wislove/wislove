@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 import com.wislove.filter.AuthTokenFilter;
 
@@ -17,7 +16,6 @@ import com.wislove.filter.AuthTokenFilter;
  * @date: 2018年7月9日下午4:47:28
  */
 @Configuration
-@Component
 public class RestFilterConfig {
 	
 	@Autowired
@@ -28,7 +26,8 @@ public class RestFilterConfig {
 		FilterRegistrationBean<Filter> registrationBean  = new FilterRegistrationBean<Filter>();
 		registrationBean.setFilter(authTokenFilter);
 		
-		// 设置需要过滤的uri名单		
+		// 设置需要过滤的uri名单
+		
 		
 		return registrationBean;
 	}
