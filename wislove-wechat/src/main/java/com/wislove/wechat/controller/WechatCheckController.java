@@ -16,7 +16,11 @@ import com.wislove.wechat.utils.CheckUtils;
  */
 @RestController
 public class WechatCheckController {
-	
+
+	@GetMapping(value = "/")
+	public  String index(){
+		return  "这是首页哦！";
+	}
 	
 	@GetMapping(value = "/check")
 	public String check(HttpServletRequest request, HttpServletResponse response) {
