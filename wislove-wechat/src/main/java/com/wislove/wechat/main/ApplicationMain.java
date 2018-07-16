@@ -5,15 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
-* spring-boot启动类
-* @author: 廖双龙
-* @date: 2018年7月13日上午9:27:43  
-*/
+ * Created by 廖双龙 on 2018/7/14.
+ */
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.wislove.*"})
+@ComponentScan(value = {"com.wislove.wechat"})
 public class ApplicationMain {
-	
-	public static  void main(String[] args){
+
+    public  static void  main(String[] args){
         SpringApplication.run(ApplicationMain.class);
     }
 }
