@@ -31,10 +31,11 @@ public class WechatCheckController {
 		
 		boolean pass = CheckUtils.checkSignature(signature, timestamp, nonce);
 		if (pass){
+			System.out.println("验证通过");
 			return echostr;
 		}
 		
-		return "";
+		return echostr;
 	}
 
 }
