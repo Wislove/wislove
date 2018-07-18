@@ -1,6 +1,9 @@
 package com.wislove.wechat.api;
 
-import org.springframework.util.StringUtils;
+import java.util.HashMap;
+import java.util.Map;
+
+import com.wislove.wechat.utils.HttpClientUtil;
 
 /**
  * access_token 相关微信api
@@ -15,15 +18,18 @@ public class AccessTokenApi {
     /**
      * 获取access_token
      * @param grant_type 授权类型:默认为client_credential
-     * @param appid
-     * @param secret
+     * @param appid 
+     * @param secret 
      * @return
      */
-    public static  String getAccessToken(String grant_type, String appid, String secret){
-        final String api = "https://api.weixin.qq.com/cgi-bin/token";
-
-        
-
-        return  "";
+    public static String getAccessToken(String grant_type, String appid, String secret){
+        final String url = "https://api.weixin.qq.com/cgi-bin/token";
+        Map<String, String> params = new HashMap<>();
+        params.put("grant_type", "client_credential");
+		params.put("appid", APPID);
+		params.put("secret", SECRET);
+            
+        return  HttpClientUtil.sendGetRequest(url, null, params);
     }
+    
 }
