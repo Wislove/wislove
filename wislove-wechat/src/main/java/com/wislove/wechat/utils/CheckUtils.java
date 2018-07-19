@@ -11,7 +11,7 @@ import java.util.Arrays;
  */
 public class CheckUtils {
 	// 和微信公众平台配置的token须保持一致
-	private static final String token = "jby646277";
+	private static final String token = "wislove123456";
 	
 	public static boolean checkSignature(String signature, String timestamp, String nonce) {
 		System.out.println(signature);

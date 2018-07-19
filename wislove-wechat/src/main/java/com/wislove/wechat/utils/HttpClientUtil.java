@@ -59,7 +59,8 @@ public class HttpClientUtil {
 		params.put("appid", "wxc7ca1dfd1ff1d99f");
 		params.put("secret", "7b80c66a1c7bb308dd3de189c2b57335");
 		
-		System.out.println(sendGetRequest(url, null, params));
+		
+		System.out.println(sendHttpPost(url, params, null));
 	}
 	
 	/**

@@ -10,10 +10,7 @@ import com.wislove.wechat.utils.HttpClientUtil;
  * Created by 廖双龙 on 2018/7/14.
  */
 public class AccessTokenApi {
-
-    private static final String APPID = "wxc7ca1dfd1ff1d99f";
-
-    private static final String SECRET = "7b80c66a1c7bb308dd3de189c2b57335";
+	
 
     /**
      * 获取access_token
@@ -26,8 +23,8 @@ public class AccessTokenApi {
         final String url = "https://api.weixin.qq.com/cgi-bin/token";
         Map<String, String> params = new HashMap<>();
         params.put("grant_type", "client_credential");
-		params.put("appid", APPID);
-		params.put("secret", SECRET);
+		params.put("appid", appid);
+		params.put("secret", secret);
             
         return  HttpClientUtil.sendGetRequest(url, null, params);
     }
