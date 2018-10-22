@@ -1,0 +1,15 @@
+com\wislove\uc\entity\UserAccountBindInfo.class
+com\wislove\uc\utils\MyMapper.class
+com\wislove\uc\main\SpringBootUcMain.class
+com\wislove\uc\mapper\UserAccountBindInfoMapper.class
+com\wislove\uc\mapper\UserBaseInfoMapper.class
+com\wislove\uc\utils\SnowflakeIdWorker.class
+com\wislove\uc\service\LoginService.class
+com\wislove\uc\service\impl\LoginServiceImpl.class
+com\wislove\uc\utils\SnowflakeIdWorkerFactory.class
+com\wislove\uc\entity\UserBaseInfo.class
+com\wislove\uc\config\RedisConfig.class
+com\wislove\uc\utils\IdGennerator.class
+com\wislove\uc\controller\UserController.class
+com\wislove\uc\service\impl\RegisterServiceImp.class
+com\wislove\uc\service\RegisterService.class

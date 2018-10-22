@@ -1,0 +1,46 @@
+Manifest-Version: 1.0
+Built-By: ￥ﾻﾖ￥ﾏﾌ￩ﾾﾙ
+Class-Path: lib/spring-boot-starter-web-2.0.0.RELEASE.jar lib/spring-b
+ oot-starter-2.0.0.RELEASE.jar lib/spring-boot-2.0.0.RELEASE.jar lib/s
+ pring-boot-autoconfigure-2.0.0.RELEASE.jar lib/spring-boot-starter-lo
+ gging-2.0.0.RELEASE.jar lib/logback-classic-1.2.3.jar lib/logback-cor
+ e-1.2.3.jar lib/log4j-to-slf4j-2.10.0.jar lib/log4j-api-2.10.0.jar li
+ b/jul-to-slf4j-1.7.25.jar lib/javax.annotation-api-1.3.2.jar lib/snak
+ eyaml-1.19.jar lib/spring-boot-starter-json-2.0.0.RELEASE.jar lib/jac
+ kson-databind-2.9.4.jar lib/jackson-annotations-2.9.0.jar lib/jackson
+ -core-2.9.4.jar lib/jackson-datatype-jdk8-2.9.4.jar lib/jackson-datat
+ ype-jsr310-2.9.4.jar lib/jackson-module-parameter-names-2.9.4.jar lib
+ /spring-boot-starter-tomcat-2.0.0.RELEASE.jar lib/tomcat-embed-core-8
+ .5.28.jar lib/tomcat-embed-el-8.5.28.jar lib/tomcat-embed-websocket-8
+ .5.28.jar lib/hibernate-validator-6.0.7.Final.jar lib/validation-api-
+ 2.0.1.Final.jar lib/spring-web-5.0.4.RELEASE.jar lib/spring-beans-5.0
+ .4.RELEASE.jar lib/spring-webmvc-5.0.4.RELEASE.jar lib/spring-aop-5.0
+ .4.RELEASE.jar lib/spring-context-5.0.4.RELEASE.jar lib/spring-expres
+ sion-5.0.4.RELEASE.jar lib/spring-boot-starter-data-redis-2.0.0.RELEA
+ SE.jar lib/spring-data-redis-2.0.5.RELEASE.jar lib/spring-data-keyval
+ ue-2.0.5.RELEASE.jar lib/spring-data-commons-2.0.5.RELEASE.jar lib/sp
+ ring-tx-5.0.4.RELEASE.jar lib/spring-oxm-5.0.4.RELEASE.jar lib/spring
+ -context-support-5.0.4.RELEASE.jar lib/slf4j-api-1.7.25.jar lib/lettu
+ ce-core-5.0.2.RELEASE.jar lib/reactor-core-3.1.5.RELEASE.jar lib/reac
+ tive-streams-1.0.2.jar lib/netty-common-4.1.22.Final.jar lib/netty-tr
+ ansport-4.1.22.Final.jar lib/netty-buffer-4.1.22.Final.jar lib/netty-
+ resolver-4.1.22.Final.jar lib/netty-handler-4.1.22.Final.jar lib/nett
+ y-codec-4.1.22.Final.jar lib/spring-core-5.0.4.RELEASE.jar lib/spring
+ -jcl-5.0.4.RELEASE.jar lib/hibernate-core-5.2.14.Final.jar lib/jboss-
+ logging-3.3.2.Final.jar lib/hibernate-jpa-2.1-api-1.0.0.Final.jar lib
+ /javassist-3.22.0-GA.jar lib/antlr-2.7.7.jar lib/jboss-transaction-ap
+ i_1.2_spec-1.0.1.Final.jar lib/jandex-2.0.3.Final.jar lib/classmate-1
+ .3.4.jar lib/dom4j-1.6.1.jar lib/hibernate-commons-annotations-5.0.1.
+ Final.jar lib/mybatis-spring-boot-starter-1.3.1.jar lib/spring-boot-s
+ tarter-jdbc-2.0.0.RELEASE.jar lib/HikariCP-2.7.8.jar lib/spring-jdbc-
+ 5.0.4.RELEASE.jar lib/mybatis-spring-boot-autoconfigure-1.3.1.jar lib
+ /mybatis-3.4.5.jar lib/mybatis-spring-1.3.1.jar lib/mapper-spring-boo
+ t-starter-1.2.4.jar lib/mapper-spring-boot-autoconfigure-1.2.4.jar li
+ b/mapper-3.5.3.jar lib/persistence-api-1.0.jar lib/pagehelper-spring-
+ boot-starter-1.2.3.jar lib/pagehelper-spring-boot-autoconfigure-1.2.3
+ .jar lib/pagehelper-5.1.2.jar lib/jsqlparser-1.0.jar lib/mysql-connec
+ tor-java-5.1.39.jar lib/druid-1.0.5.jar
+Build-Jdk: 1.8.0_121
+Created-By: Maven Integration for Eclipse
+Main-Class: com.wislove.uc.main.SpringBootUcMain
+

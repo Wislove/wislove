@@ -1,0 +1,47 @@
+server:
+  port: 8099
+  servlet:
+    context-path: /wislove-uc
+
+spring:
+  datasource:
+    #type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/wislove_uc
+    username: root
+    password: root
+  #redis配置
+  redis:
+    #  数据库索引
+    database: 0
+    #    服务器地址
+    host: 127.0.0.1
+    #    服务器连接端口
+    port: 6379
+    #    链接密码
+    password:
+    #    链接池
+    pool:
+        #    最大连接数（负值表示没有限制）
+      max-active: 8
+        #      最大阻塞等待时间（负值表示没有限制）
+      max-wait: 1
+        #      最大空闲链接
+      max-idle: 8
+        #      最小空闲链接
+      min-idle: 0
+        #    链接超时时间（毫秒）
+    timeout: 0
+    
+# mybatis
+mybatis:
+  type-aliases-package: com.wislove.uc.entity
+  mapper-locations: classpath:sqlmapper/*.xml
+
+#logger
+logging:
+   path: D:/wislove_logs/wislove_uc
+#  pattern:
+#    console: "%d - %msg%n"
+#  level: info
+

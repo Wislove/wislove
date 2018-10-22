@@ -1,0 +1,15 @@
+D:\usr\wislove\wislove-uc\src\main\java\com\wislove\uc\service\impl\RegisterServiceImp.java
+D:\usr\wislove\wislove-uc\src\main\java\com\wislove\uc\mapper\UserAccountBindInfoMapper.java
+D:\usr\wislove\wislove-uc\src\main\java\com\wislove\uc\mapper\UserBaseInfoMapper.java
+D:\usr\wislove\wislove-uc\src\main\java\com\wislove\uc\service\RegisterService.java
+D:\usr\wislove\wislove-uc\src\main\java\com\wislove\uc\config\RedisConfig.java
+D:\usr\wislove\wislove-uc\src\main\java\com\wislove\uc\utils\IdGennerator.java
+D:\usr\wislove\wislove-uc\src\main\java\com\wislove\uc\utils\MyMapper.java
+D:\usr\wislove\wislove-uc\src\main\java\com\wislove\uc\entity\UserAccountBindInfo.java
+D:\usr\wislove\wislove-uc\src\main\java\com\wislove\uc\main\SpringBootUcMain.java
+D:\usr\wislove\wislove-uc\src\main\java\com\wislove\uc\utils\SnowflakeIdWorkerFactory.java
+D:\usr\wislove\wislove-uc\src\main\java\com\wislove\uc\controller\UserController.java
+D:\usr\wislove\wislove-uc\src\main\java\com\wislove\uc\entity\UserBaseInfo.java
+D:\usr\wislove\wislove-uc\src\main\java\com\wislove\uc\utils\SnowflakeIdWorker.java
+D:\usr\wislove\wislove-uc\src\main\java\com\wislove\uc\service\impl\LoginServiceImpl.java
+D:\usr\wislove\wislove-uc\src\main\java\com\wislove\uc\service\LoginService.java
