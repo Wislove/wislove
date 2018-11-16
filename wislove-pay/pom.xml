@@ -17,6 +17,8 @@
         <module>wislove-pay-dao</module>
         <module>wislove-pay-web</module>
         <module>wislove-pay-common</module>
+        <module>wislove-pay-sdk</module>
     </modules>
+
 
 </project>
