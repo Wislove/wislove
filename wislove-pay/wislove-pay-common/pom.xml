@@ -8,7 +8,8 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>wislove-pay-rpc-api</artifactId>
-    <packaging>jar</packaging>
-    <description>rpc相关接口,目前计划使用dubbo配合zookepper来作为rpc接口的提供技术</description>
+
+    <artifactId>wislove-pay-common</artifactId>
+
+
 </project>
