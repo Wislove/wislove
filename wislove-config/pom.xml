@@ -8,19 +8,28 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <description>所有的配置整合中心</description>
     <artifactId>wislove-config</artifactId>
+    <packaging>jar</packaging>
+
+    <!--将spring-boot的pom文件作为pom导入-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <!-- Import dependency management from Spring Boot -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.0.0.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <!--TODO 搭建Nexus私有仓库管理jar包-->
 
     <!--相关的jar包-->
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.7</version>
-            <scope>test</scope>
-        </dependency>
         <!--servlet-->
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -28,14 +37,6 @@
             <version>2.5</version>
             <scope>provided</scope>
         </dependency>
-        <!--mysql connector-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.39</version>
-            <scope>runtime</scope>
-        </dependency>
-
         <!--spring-->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -55,11 +56,6 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
             <version>${spring.version}</version>
         </dependency>
         <dependency>
